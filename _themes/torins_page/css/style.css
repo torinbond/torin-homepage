@@ -1,15 +1,29 @@
 body {
-  background: #fff;
+  background-color: rgba(231, 76, 60, .25);
+  -moz-transition: background-color 2s;
+  -webkit-transition: background-color 2s;
+  -o-transition: background-color 2s;
+  transition: background-color 2s;
   position: relative;
-  min-height: 100%;
+  height: 1000px;
 }
 
+.active {
+  display: block;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 25px;
+}
 .nav {
   width: 100%;
   height: 300px;
   transform: rotate(180deg);
 }
-.project{
+.project, .post{
+  margin: 5px 10px 5px 10px;
+  border: 1px solid #cccccc;
   box-shadow: 0 0 0px #888888;
   -moz-box-shadow: 0 0 0px #888888;
   -webkit-box-shadow: 0 0 0px #888888;
@@ -19,13 +33,14 @@ body {
   -o-transition: box-shadow 1s;
   transition: box-shadow 1s;
 }
-.project:hover {
+.project:hover, .post:hover {
   box-shadow: 0 0 10px #888888;
   -moz-box-shadow: 0 0 10px #888888;
   -webkit-box-shadow: 0 0 10px #888888;
 
 }
 .main-content{
+  background: #fff;
   box-shadow: 0 0 8px #888888;
   -moz-box-shadow: 0 0 8px #888888;
   -webkit-box-shadow: 0 0 8px #888888;
@@ -39,6 +54,9 @@ body {
   height: 1000px;
   position: absolute;
   top: -150px;
+   box-shadow: 0 0 15px #888888;
+  -moz-box-shadow: 0 0 15px #888888;
+  -webkit-box-shadow: 0 0 15px #888888;
 }
 .triangle span {
   position: absolute;
