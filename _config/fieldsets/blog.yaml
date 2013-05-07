@@ -1,0 +1,25 @@
+title: Blog Entry
+
+fields:
+
+  title:
+    display: Entry title
+    type: text
+
+  image:
+    type: file
+    display: Upload an Image
+    destination: assets/img
+    show_thumbnail: true
+
+  content:
+    display: Blog content
+    required: true
+    default:
+    type: Redactor
+
+  categories:
+    display: Categories
+    required: false
+    default:
+    type: tags

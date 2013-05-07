@@ -1,0 +1,73 @@
+#########################################################################
+#
+# REDACTOR FIELDTYPE SETTINGS
+#
+# For a list of all options visit: http://redactorjs.com/docs/settings/
+#
+#########################################################################
+
+# Automatically resize to show all written content
+autoresize: true
+
+# Order and choose your buttons. Use '|' for a vertical seperator
+buttons:
+ - formatting
+ - '|'
+ - bold
+ - italic
+ - deleted
+ - '|'
+ - unorderedlist
+ - orderedlist
+ - outdent
+ - indent
+ - '|'
+ - image
+ - video
+ - table
+ - link
+ - horizontalrule
+ - '|'
+ - fontcolor
+ - backcolor
+ - '|'
+ - alignleft
+ - aligncenter
+ - alignright
+ - justify
+ - '|'
+ - html
+
+# Turn on/off cleanup on paste
+cleanup: true
+
+# Automatically replace URLs with hyperlinks
+convertLinks: true
+
+# Automatically replace divs with paragraphs
+convertDivs: true
+
+# Set a minimum height in pixels
+minHeight: 150
+
+# Turn on/off paragraph formatting
+paragraphy: true
+
+plugins:
+  - fullscreen
+
+# Turn on/off keypress shortcuts
+shortcuts: true
+
+# Turn on/off the HTML source button on the toolbar
+source: true
+
+# Visual structure mode
+wym: false
+
+## Set your own list of available colors to pick from
+# colors:
+#   - '#00405d'
+#   - '#ffcc33'
+#   - '#ff0000'
+#   - '#fcd20b'

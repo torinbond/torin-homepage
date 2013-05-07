@@ -1,0 +1,23 @@
+title: Project Entry
+
+fields:
+
+  title:
+    display: Project title
+    type: text
+
+  image:
+    type: file
+    display: Upload an Image
+    destination: assets/img
+    show_thumbnail: true
+
+  content:
+    display: Project description
+    required: false
+    default:
+    type: Redactor
+
+  link:
+    display: Project url
+    type: text

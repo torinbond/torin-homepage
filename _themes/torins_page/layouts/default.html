@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ _site_name }}</title>
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ theme:css src='gumby'}}" />
+  <link rel="stylesheet" href="{{ theme:css src='style'}}" />
+  <script src="{{ theme:js src='libs/modernizr-2.6.2.min'}}"></script>
+  <link rel="icon" type="image/png" href="{{ theme:img src="favicon.png" }}" />
+</head>
+<body>
+    <div class="nav">
+
+      <ul class="tab-nav">
+
+        <div class="half left">
+      
+          <li class="active"><a class="triangle large" href="#">
+            <span>About me</span>
+          </a></li>
+          
+          <li><a class="triangle small" href="#">
+            <span>Projects</span>
+          </a></li>
+          
+        </div>
+
+        <div class="half right">
+          
+          <li><a class="triangle large" href="#">
+            <span>Blog</span>
+          </a></li>
+          
+          <li><a class="triangle small" href="/">
+            <span>Home</span>
+          </a></li>
+          
+        </div>
+      </ul>
+      
+    </div>
+      <div class="row main-content">
+        <div class="ten columns centered" style="text-align:center;">
+          <h1>My Name is Torin.</h1>
+          <a href="https://github.com/torinbond" target="_blank"><i class="icon-github"></i></a>
+          <a href="https://www.facebook.com/torin.bond" target="_blank"><i class="icon-facebook"></i></a>
+          <a href="https://twitter.com/katamari0611" target="_blank"><i class="icon-twitter"></i></a>
+          <a href="mailto:torin.bond@gmail.com" target="_blank"><i class="icon-mail"></i></a>
+          <h4>I like to build websites, work with audio and play ultimate frisbee.</h4>
+        
+          <div class="tab-content active"></div>
+          <div class="tab-content" id="blog">
+            {{ entries:listing from="blog" limit="5" }}
+              <div class="post">
+                <h5 style="text-decoration:underline;">{{ title }}</h5>
+                <div class="blog-date">
+                  <span class="month"> {{ date format="M" }}</span>
+                  <span class="day"> {{ date format="j" }},</span>
+                  <span class="year"> {{ date format="Y" }}</span>
+                </div>
+                {{ content }}
+              </div>  
+            {{ /entries:listing }}
+          </div>
+          <div class="tab-content" id="projects">
+            {{ get_content from="projects" }}   
+              <h4>{{ title }}</h4>    
+              {{ content }}   
+            {{ /get_content }}
+            {{ entries:listing from="projects" limit="5" }}
+              <a href="{{link}}"><div class="project four columns image photo">
+                <img src="{{image}}" alt="{{title}}">
+                <h6 style="text-decoration:underline;">{{ link }}</h6>
+              </div></a>  
+            {{ /entries:listing }}
+          </div>
+          
+        </div>
+      </div>
+      
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="{{ theme:js src="jquery-1.9.1.min" }}"><\/script>')</script>
+
+  <script type="text/javascript" src="{{ theme:js src='libs/gumby.min' }}"></script>
+  <script type="text/javascript" src="{{ theme:js src='plugins' }}"></script>
+  <script type="text/javascript" src="{{ theme:js src='main' }}"></script>
+  <script src="{{ theme:js src='prefixfree.min'}}"></script>
+</body>
+</html>

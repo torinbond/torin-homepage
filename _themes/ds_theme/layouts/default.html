@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ _site_name }}</title>
+  <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{{ theme:css src='gumby'}}" />
+  <script src="{{ theme:js src='libs/modernizr-2.6.2.min'}}"></script>
+  <link rel="icon" type="image/png" href="{{ theme:img src="favicon.png" }}" />
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="ten columns centered">
+        <h3 class="site-name"><a href="{{ homepage }}">{{ _site_name }}</a></h3>
+        <img src="{{ theme:img src="DSLogo_Header.jpg" }}" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="two columns">
+        {{ theme:partial src="nav" }}
+        {{ theme:partial src="category-list" }}
+      </div>
+      <div class="ten columns">
+        {{ layout_content }}
+        {{ email_form:index to="1" cc="even" bcc="" from="" msg_header="" msg_footer="" subject="" class="" id="" required="" honeypot=""}}
+      </div>
+    </div>
+  </section>
+</div>
+  {{ if include_maps }}
+      {{ location:start_maps }}
+  {{ endif }}
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="{{ theme:js src="jquery-1.9.1.min" }}"><\/script>')</script>
+
+  <script type="text/javascript" src="{{ theme:js src='libs/gumby.min' }}"></script>
+  <script type="text/javascript" src="{{ theme:js src='plugins' }}"></script>
+  <script type="text/javascript" src="{{ theme:js src='main' }}"></script>
+</body>
+</html>

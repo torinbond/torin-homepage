@@ -1,0 +1,42 @@
+title: Standard Page
+
+fields:
+  _template:
+    display: Template
+    type: templates
+
+  title:
+    default: Default Value
+    instructions: These are instructions.
+
+  image:
+    type: file
+    display: Upload an Image
+    destination: assets/img
+    show_thumbnail: true
+
+  related:
+    display: Related Entries
+    type: suggest
+    placeholder: "Choose a page"
+    multiple: true
+    # options:
+      # happy: happy
+      # sad: sad
+    content:
+      folder: blog
+      label: title
+      value: url
+    # taxonomy:
+    #   folder: blog
+    #   type: categories
+
+  where:
+    display: Where It’s At
+    type: location
+
+  content:
+    display: Page Content
+    required: false
+    default:
+    type: markitup

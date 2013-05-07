@@ -1,0 +1,11 @@
+---
+first_name: Torin
+last_name: Bond
+roles: [admin]
+password: 
+encrypted_password: 2a68a91742ebab25214e8d26098046aaa7a160d2
+salt: 1zYxM0j9MJs88wWwTV1hxmQ78wfVbQsP
+---
+The username is the name of the yaml file. In this case it is "admin".
+
+Uncomment and set your password above and MAKE SURE TO ENCRYPT YOUR PASSWORD in the Control Panel, automatically triggered by logging in. You can reset your password by deleting the encrypted password field and adding a new plain text password, but always make sure to log in again to re-encrypt. All user accounts created in the Control Panel are encrypted by default.

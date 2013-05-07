@@ -1,0 +1,16 @@
+<h6>Blog Entries</h6>
+
+{{ entries:listing folder="/01-blog" sort_dir="date" limit="5" }}
+	<div class="blog block">
+	    <div class="blog-date">
+	      <span class="month"> {{ date format="M" }}</span>
+	      <span class="day"> {{ date format="j" }}</span>
+	      <span class="year"> {{ date format="Y" }}</span>
+	    </div>
+	    <div class="blog-details">
+	      <h3 class="blog-title">{{ title }}</h3>
+	      {{ content }}
+	    </div>
+	</div>
+
+{{ /entries:listing }}

@@ -1,0 +1,227 @@
+ERROR|Fri, 03 May 2013 12:27:33 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 12:27:33 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:54:10 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:54:14 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:54:14 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:54:38 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:54:38 -0400|page|content|/%7B%7B%20theme:img|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+FATAL|Fri, 03 May 2013 13:54:38 -0400|Lex|Parser|/%7B%7B%20theme:img|127.0.0.1|dev|Division by zero on line 2.
+exception 'ErrorException' with message 'Division by zero' in /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(1041) : eval()'d code:2
+Stack trace:
+#0 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(1041) : eval()'d code(2): Slim\Slim::handleErrors(2, 'Division by zer...', '/Users/torin_bo...', 2, Array)
+#1 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(1041): eval()
+#2 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(499): Lex\Parser->parsePhp('<ul class="nav ...')
+#3 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(76): Lex\Parser->parseConditionals('<ul class="nav ...', Array, 'Statamic_View::...')
+#4 /Users/torin_bond/Sites/torins-passage/_app/core/api/parse.php(40): Lex\Parser->parse('<ul class="nav ...', Array, 'Statamic_View::...', false)
+#5 /Users/torin_bond/Sites/torins-passage/_app/core/tags/theme/pi.theme.php(26): Parse::template('<ul class="nav ...', Array, 'Statamic_View::...')
+#6 /Users/torin_bond/Sites/torins-passage/_app/core/view.php(210): Plugin_theme->partial()
+#7 [internal function]: Statamic_View->callback('theme:partial', Array, '')
+#8 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(316): call_user_func_array(Array, Array)
+#9 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(82): Lex\Parser->parseCallbackTags('<!doctype html>...', Array, Array)
+#10 /Users/torin_bond/Sites/torins-passage/_app/core/view.php(125): Lex\Parser->parse('<!doctype html>...', Array, Array, true)
+#11 /Users/torin_bond/Sites/torins-passage/_app/core/view.php(99): Statamic_View->_render_layout('<div class="blo...', 'html')
+#12 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/View.php(195): Statamic_View->render(NULL)
+#13 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/View.php(182): Slim\View->fetch(NULL)
+#14 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Slim.php(672): Slim\View->display(NULL)
+#15 /Users/torin_bond/Sites/torins-passage/_app/routes.php(253): Slim\Slim->render(NULL, Array, 404)
+#16 [internal function]: {closure}(Array)
+#17 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Router.php(172): call_user_func_array(Object(Closure), Array)
+#18 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Slim.php(1222): Slim\Router->dispatch(Object(Slim\Route))
+#19 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Middleware/Flash.php(86): Slim\Slim->call()
+#20 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Middleware/MethodOverride.php(94): Slim\Middleware\Flash->call()
+#21 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Middleware/SessionCookie.php(116): Slim\Middleware\MethodOverride->call()
+#22 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\SessionCookie->call()
+#23 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Slim.php(1174): Slim\Middleware\PrettyExceptions->call()
+#24 /Users/torin_bond/Sites/torins-passage/index.php(65): Slim\Slim->run()
+#25 {main}
+ERROR|Fri, 03 May 2013 13:54:40 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:54:40 -0400|page|content|/%7B%7B%20theme:img|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+FATAL|Fri, 03 May 2013 13:54:40 -0400|Lex|Parser|/%7B%7B%20theme:img|127.0.0.1|dev|Division by zero on line 2.
+exception 'ErrorException' with message 'Division by zero' in /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(1041) : eval()'d code:2
+Stack trace:
+#0 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(1041) : eval()'d code(2): Slim\Slim::handleErrors(2, 'Division by zer...', '/Users/torin_bo...', 2, Array)
+#1 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(1041): eval()
+#2 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(499): Lex\Parser->parsePhp('<ul class="nav ...')
+#3 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(76): Lex\Parser->parseConditionals('<ul class="nav ...', Array, 'Statamic_View::...')
+#4 /Users/torin_bond/Sites/torins-passage/_app/core/api/parse.php(40): Lex\Parser->parse('<ul class="nav ...', Array, 'Statamic_View::...', false)
+#5 /Users/torin_bond/Sites/torins-passage/_app/core/tags/theme/pi.theme.php(26): Parse::template('<ul class="nav ...', Array, 'Statamic_View::...')
+#6 /Users/torin_bond/Sites/torins-passage/_app/core/view.php(210): Plugin_theme->partial()
+#7 [internal function]: Statamic_View->callback('theme:partial', Array, '')
+#8 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(316): call_user_func_array(Array, Array)
+#9 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(82): Lex\Parser->parseCallbackTags('<!doctype html>...', Array, Array)
+#10 /Users/torin_bond/Sites/torins-passage/_app/core/view.php(125): Lex\Parser->parse('<!doctype html>...', Array, Array, true)
+#11 /Users/torin_bond/Sites/torins-passage/_app/core/view.php(99): Statamic_View->_render_layout('<div class="blo...', 'html')
+#12 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/View.php(195): Statamic_View->render(NULL)
+#13 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/View.php(182): Slim\View->fetch(NULL)
+#14 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Slim.php(672): Slim\View->display(NULL)
+#15 /Users/torin_bond/Sites/torins-passage/_app/routes.php(253): Slim\Slim->render(NULL, Array, 404)
+#16 [internal function]: {closure}(Array)
+#17 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Router.php(172): call_user_func_array(Object(Closure), Array)
+#18 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Slim.php(1222): Slim\Router->dispatch(Object(Slim\Route))
+#19 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Middleware/Flash.php(86): Slim\Slim->call()
+#20 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Middleware/MethodOverride.php(94): Slim\Middleware\Flash->call()
+#21 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Middleware/SessionCookie.php(116): Slim\Middleware\MethodOverride->call()
+#22 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\SessionCookie->call()
+#23 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Slim.php(1174): Slim\Middleware\PrettyExceptions->call()
+#24 /Users/torin_bond/Sites/torins-passage/index.php(65): Slim\Slim->run()
+#25 {main}
+ERROR|Fri, 03 May 2013 13:54:40 -0400|page|content|/%7B%7B%20theme:img|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+FATAL|Fri, 03 May 2013 13:54:40 -0400|Lex|Parser|/%7B%7B%20theme:img|127.0.0.1|dev|Division by zero on line 2.
+exception 'ErrorException' with message 'Division by zero' in /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(1041) : eval()'d code:2
+Stack trace:
+#0 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(1041) : eval()'d code(2): Slim\Slim::handleErrors(2, 'Division by zer...', '/Users/torin_bo...', 2, Array)
+#1 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(1041): eval()
+#2 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(499): Lex\Parser->parsePhp('<ul class="nav ...')
+#3 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(76): Lex\Parser->parseConditionals('<ul class="nav ...', Array, 'Statamic_View::...')
+#4 /Users/torin_bond/Sites/torins-passage/_app/core/api/parse.php(40): Lex\Parser->parse('<ul class="nav ...', Array, 'Statamic_View::...', false)
+#5 /Users/torin_bond/Sites/torins-passage/_app/core/tags/theme/pi.theme.php(26): Parse::template('<ul class="nav ...', Array, 'Statamic_View::...')
+#6 /Users/torin_bond/Sites/torins-passage/_app/core/view.php(210): Plugin_theme->partial()
+#7 [internal function]: Statamic_View->callback('theme:partial', Array, '')
+#8 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(316): call_user_func_array(Array, Array)
+#9 /Users/torin_bond/Sites/torins-passage/_app/vendor/Lex/Parser.php(82): Lex\Parser->parseCallbackTags('<!doctype html>...', Array, Array)
+#10 /Users/torin_bond/Sites/torins-passage/_app/core/view.php(125): Lex\Parser->parse('<!doctype html>...', Array, Array, true)
+#11 /Users/torin_bond/Sites/torins-passage/_app/core/view.php(99): Statamic_View->_render_layout('<div class="blo...', 'html')
+#12 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/View.php(195): Statamic_View->render(NULL)
+#13 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/View.php(182): Slim\View->fetch(NULL)
+#14 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Slim.php(672): Slim\View->display(NULL)
+#15 /Users/torin_bond/Sites/torins-passage/_app/routes.php(253): Slim\Slim->render(NULL, Array, 404)
+#16 [internal function]: {closure}(Array)
+#17 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Router.php(172): call_user_func_array(Object(Closure), Array)
+#18 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Slim.php(1222): Slim\Router->dispatch(Object(Slim\Route))
+#19 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Middleware/Flash.php(86): Slim\Slim->call()
+#20 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Middleware/MethodOverride.php(94): Slim\Middleware\Flash->call()
+#21 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Middleware/SessionCookie.php(116): Slim\Middleware\MethodOverride->call()
+#22 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\SessionCookie->call()
+#23 /Users/torin_bond/Sites/torins-passage/_app/vendor/Slim/Slim.php(1174): Slim\Middleware\PrettyExceptions->call()
+#24 /Users/torin_bond/Sites/torins-passage/index.php(65): Slim\Slim->run()
+#25 {main}
+ERROR|Fri, 03 May 2013 13:54:40 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:55:01 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:55:15 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:55:20 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:55:29 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:55:34 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:55:40 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:59:50 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:59:53 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:59:54 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:59:58 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 13:59:59 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:00:31 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:00:33 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:00:33 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:01:39 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:01:41 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:01:42 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:05:44 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:06:01 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:06:36 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:10:46 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:10:48 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:10:48 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:17:34 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:17:37 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:17:37 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:28:45 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:29:14 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:35:52 -0400|page|content|/js/libs/gumby.min.js|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:35:52 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+INFO|Fri, 03 May 2013 14:35:52 -0400|site|favicon|/favicon.ico|127.0.0.1|dev|The site favicon could not be found.
+ERROR|Fri, 03 May 2013 14:35:57 -0400|page|content|/js/libs/gumby.min.js|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:35:57 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+INFO|Fri, 03 May 2013 14:35:57 -0400|site|favicon|/favicon.ico|127.0.0.1|dev|The site favicon could not be found.
+ERROR|Fri, 03 May 2013 14:36:03 -0400|page|content|/js/libs/gumby.min.js|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:36:03 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:41:15 -0400|page|content|/_themes/ds_theme/js/lib/gumby.min.js|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:41:15 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:41:18 -0400|page|content|/_themes/ds_theme/js/lib/gumby.min.js|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:41:18 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:41:18 -0400|page|content|/_themes/ds_theme/css/ds_theme.css|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:41:18 -0400|page|content|/_themes/ds_theme/js/lib/gumby.min.js|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+ERROR|Fri, 03 May 2013 14:43:13 -0400|page|content|/_themes/ds_theme/js/lib/gumby.min.js|127.0.0.1|dev|404 - Page not found. There is a bad link on <a href="/">/</a>.
+INFO|Fri, 03 May 2013 15:43:28 -0400|site|favicon|/favicon.ico|127.0.0.1|dev|The site favicon could not be found.
+WARN|Fri, 03 May 2013 16:15:24 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:24 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:24 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:24 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:24 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:24 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:24 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:24 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:24 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:24 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:24 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:24 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->parse_loop() is deprecated. Use Parse::tagLoop() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->parse_loop() is deprecated. Use Parse::tagLoop() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/?codekitCB=389304924.806511|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/?codekitCB=389304924.806511|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/?codekitCB=389304924.806511|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/?codekitCB=389304924.806511|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/?codekitCB=389304924.806511|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/?codekitCB=389304924.806511|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/?codekitCB=389304924.806511|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/?codekitCB=389304924.806511|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/?codekitCB=389304924.806511|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/?codekitCB=389304924.806511|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/?codekitCB=389304924.806511|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:25 -0400|plugin|email_form|/?codekitCB=389304924.806511|127.0.0.1|dev|Use of $this->parse_loop() is deprecated. Use Parse::tagLoop() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->parse_loop() is deprecated. Use Parse::tagLoop() instead.
+INFO|Fri, 03 May 2013 16:15:29 -0400|site|favicon|/favicon.ico|127.0.0.1|dev|The site favicon could not be found.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:29 -0400|plugin|email_form|/|127.0.0.1|dev|Use of $this->parse_loop() is deprecated. Use Parse::tagLoop() instead.
+WARN|Fri, 03 May 2013 16:15:30 -0400|plugin|email_form|/favicon.ico|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:30 -0400|plugin|email_form|/favicon.ico|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:30 -0400|plugin|email_form|/favicon.ico|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:30 -0400|plugin|email_form|/favicon.ico|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:30 -0400|plugin|email_form|/favicon.ico|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:30 -0400|plugin|email_form|/favicon.ico|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:30 -0400|plugin|email_form|/favicon.ico|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:30 -0400|plugin|email_form|/favicon.ico|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:30 -0400|plugin|email_form|/favicon.ico|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:30 -0400|plugin|email_form|/favicon.ico|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:30 -0400|plugin|email_form|/favicon.ico|127.0.0.1|dev|Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 16:15:30 -0400|plugin|email_form|/favicon.ico|127.0.0.1|dev|Use of $this->parse_loop() is deprecated. Use Parse::tagLoop() instead.
+WARN|Fri, 03 May 2013 18:00:22 -0400|plugin|email_form|/|192.168.1.149||Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 18:00:22 -0400|plugin|email_form|/|192.168.1.149||Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 18:00:22 -0400|plugin|email_form|/|192.168.1.149||Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 18:00:22 -0400|plugin|email_form|/|192.168.1.149||Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 18:00:22 -0400|plugin|email_form|/|192.168.1.149||Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 18:00:22 -0400|plugin|email_form|/|192.168.1.149||Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 18:00:22 -0400|plugin|email_form|/|192.168.1.149||Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 18:00:22 -0400|plugin|email_form|/|192.168.1.149||Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 18:00:22 -0400|plugin|email_form|/|192.168.1.149||Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 18:00:22 -0400|plugin|email_form|/|192.168.1.149||Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 18:00:22 -0400|plugin|email_form|/|192.168.1.149||Use of $this->fetch_param() is deprecated. Use $this->fetchParam() instead.
+WARN|Fri, 03 May 2013 18:00:22 -0400|plugin|email_form|/|192.168.1.149||Use of $this->parse_loop() is deprecated. Use Parse::tagLoop() instead.

@@ -1,0 +1,18 @@
+.redactor_box textarea {
+	padding: 15px;
+	box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+
+#redactor_modal {
+	font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
+}
+
+.redactor_btns_box {
+	font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
+}
+
+.redactor_btns_box input[type=button] {
+	font-family: Helvetica, Arial, Verdana, Tahoma, sans-serif !important;
+}
