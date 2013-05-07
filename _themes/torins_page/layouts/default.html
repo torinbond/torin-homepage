@@ -41,7 +41,7 @@
       
     </div>
       <div class="row main-content">
-        <div class="ten columns centered" style="text-align:center;">
+        <div class="push_one ten columns" style="text-align:center;">
           <h1>My Name is Torin.</h1>
           <a href="https://github.com/torinbond" target="_blank"><i class="icon-github"></i></a>
           <a href="https://www.facebook.com/torin.bond" target="_blank"><i class="icon-facebook"></i></a>
@@ -49,7 +49,21 @@
           <a href="mailto:torin.bond@gmail.com" target="_blank"><i class="icon-mail"></i></a>
           <h4>I like to build websites, work with audio and play ultimate frisbee.</h4>
         
-          <div class="tab-content active"></div>
+          <div class="tab-content active" id="about-me">
+            {{ get_content from="about-me" }}   
+              <h4>{{ title }}</h4>
+              <div class="row"> 
+                <div class="eight columns centered">
+                  <div class="four columns image circle">
+                    <img src="{{ image }}" width="200px">
+                  </div>
+                  <div class="eight columns" style="text-align:center;">
+                    {{ content }}
+                  </div>  
+                </div>      
+              </div>
+            {{ /get_content }}
+          </div>
           <div class="tab-content" id="blog">
             {{ entries:listing from="blog" limit="5" }}
               <div class="post">
