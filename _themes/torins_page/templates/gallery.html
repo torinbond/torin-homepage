@@ -1,0 +1,17 @@
+<h2>Gallery Using Image Plugin</h2>
+<div>
+  <ul class="two_up tiles">
+    {{ gallery }}
+    <li>
+      <a href="{{ img }}">
+        <div class="four columns image photo">
+          {{ image src="{img}" dim="400x300" }}
+          <img src="{{ image_url }}" alt="{{ title }}">
+          {{ /image }}
+          <div>{{ title }}</div>
+        </div>
+      </a>
+    </li>
+    {{ /gallery }}
+  </ul>
+</div>

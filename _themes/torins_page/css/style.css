@@ -12,6 +12,19 @@ body {
   display: block;
 }
 
+.movie_title{
+  height:auto;
+}
+.movie_rating{
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+.movie_post {
+  height: 275px;
+  vertical-align: middle;
+}
+
 .tab-content {
   display: none;
   margin-top: 25px;
@@ -21,7 +34,8 @@ body {
   height: 300px;
   transform: rotate(180deg);
 }
-.project, .post{
+.project, .post, .movie_post{
+  text-align: center;
   margin: 5px 10px 5px 10px;
   border: 1px solid #cccccc;
   box-shadow: 0 0 0px #888888;
@@ -33,7 +47,7 @@ body {
   -o-transition: box-shadow 1s;
   transition: box-shadow 1s;
 }
-.project:hover, .post:hover {
+.project:hover, .post:hover, .movie_post:hover {
   box-shadow: 0 0 10px #888888;
   -moz-box-shadow: 0 0 10px #888888;
   -webkit-box-shadow: 0 0 10px #888888;
