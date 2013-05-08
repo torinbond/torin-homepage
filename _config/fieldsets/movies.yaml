@@ -1,0 +1,38 @@
+title: Recently Watched Movies
+
+fields:
+
+  title:
+    display: Movie Title
+    default: Movie Title
+    type: text
+
+  year:
+    display: year
+    type: text
+
+  link:
+      display: IMDB Link
+      type: text
+
+  image:
+    type: file
+    display: Upload an Image
+    destination: assets/img/movies
+    show_thumbnail: true
+
+  rating:
+    display: Rating 1-10
+    type: select
+    options:
+      1/10: Goddamn awful it's great
+      2/10: Goddamn awful it's funny
+      3/10: Just terrible
+      4/10: Not worth your time
+      5/10: Meh
+      6/10: Still meh 
+      7/10: Better
+      8/10: Pretty goddamn good
+      9/10: Highly recommended
+      10/10: Brilliant
+

@@ -1,0 +1,18 @@
+<h2>Movie Gallery</h2>
+<div>
+  <ul class="two_up tiles">
+    {{ movies }}
+    <li>
+      <a href="{{ link }}">
+        <h4>{{title}}</h4>
+        <div class="four columns image photo">
+          {{ image src="{img}" dim="300x200" }}
+          <img src="{{ image_url }}" alt="{{ title }}">
+          {{ /image }}
+          <div>{{ title }}</div>
+        </div>
+      </a>
+    </li>
+    {{ /movies }}
+  </ul>
+</div>

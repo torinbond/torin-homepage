@@ -8,4 +8,3 @@ where:
   latitude:
   longitude:
 ---
-This site was built using Statamic and Gumby 2.
